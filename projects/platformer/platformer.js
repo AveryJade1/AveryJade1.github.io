@@ -57,7 +57,6 @@ createPlatform(350,350,175,10);
 createPlatform(0,350,175,10);
 createPlatform(88,50,10.250);
 
-
     
     // TODO 2
     // Create collectables
