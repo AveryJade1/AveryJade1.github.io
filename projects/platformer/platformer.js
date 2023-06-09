@@ -53,11 +53,18 @@ createPlatform(525,600,175,10);
 createPlatform(875,550,175,10);
 createPlatform(1050,475,175,10);
 createPlatform(700,400,175,10);
-createPlatform(350,350,175,10);
 createPlatform(0,350,175,10);
-createPlatform(88,50,10,200);
+createPlatform(350,300,175,10);
+createPlatform(700,200,175,10);
+createPlatform(1050,120,175,10);
+createPlatform(0,100,550,10);
+createCollectable("database",1137,425);
+createCollectable("database",10,700);
+createCollectable("database",87,50);
+createCannon("bottom",200,1000);
+createCannon("left",375,1000);
+createCannon("top",700,1000);
 
-    
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
