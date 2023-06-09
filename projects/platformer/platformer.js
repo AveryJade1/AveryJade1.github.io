@@ -67,9 +67,9 @@ $(function () {
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
-    createCollectable("popcorn",1137,425);
-    createCollectable("popcorn",10,700);
-    createCollectable("popcorn",87,50);
+    createCollectable("database",1137,425);
+    createCollectable("database",10,700);
+    createCollectable("database",87,50);
 
 
     // TODO 3
@@ -79,8 +79,8 @@ $(function () {
     // example usage: createCannon(side, position, delay, width, height)
 
     createCannon("bottom",150,1000);
-    createCannon("left",700,1000);
-    createCannon("top",350,1000);
+    createCannon("left",400,1000);
+    createCannon("top",700,1000);
 
 
     /////////////////////////////////////////////////
