@@ -3,9 +3,9 @@ $(function () {
   canvas = document.getElementById("canvas");
   ctx = canvas.getContext("2d");
   window.addEventListener("load", loadJson);
+}
 
-  function setup() {
-    if (firstTimeSetup) {
+      if (firstTimeSetup) {
       halleImage = document.getElementById("player");
       projectileImage = document.getElementById("projectile");
       cannonImage = document.getElementById("cannon");
@@ -15,6 +15,9 @@ $(function () {
       //start game
       setInterval(main, 1000 / frameRate);
     }
+    function setup() {
+    }
+      if (firstTimeSetup) 
     //create walls
      createPlatform(-50, -50, canvas.width + 100, 50); //top
      createPlatform(-50, canvas.height - 10, canvas.width + 100, 200); //right
@@ -58,35 +61,9 @@ createPlatform(350,300,175,10);
 createPlatform(700,200,175,10);
 createPlatform(1050,120,175,10);
 createPlatform(0,100,550,10);
-createCollectable("database",1137,425);
-createCollectable("database",10,700);
-createCollectable("database",87,50);
-createCannon("bottom",200,1000);
-createCannon("left",375,1000);
-createCannon("top",700,1000);
-
-    // TODO 2
-    // Create collectables
-    // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
-    // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
-    // example usage: createCollectable(type, x, y, gravity, bounce)
-
-
-
-
-    // TODO 3
-    // Create cannons
-    // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
-    // Your wall choices are: 'top' 'left' 'right' and 'bottom'
-    // example usage: createCannon(side, position, delay, width, height)
-
-
-
-
-    /////////////////////////////////////////////////
-    //////////ONLY CHANGE ABOVE THIS POINT///////////
-    /////////////////////////////////////////////////
-  }
-
-  registerSetup(setup);
-});
+createCollectable("popcorn",1137,425);
+createCollectable("popcorn",10,700);
+createCollectable("popcorn",87,50);
+createCannon("bottom",150,1000);
+createCannon("left",700,1000);
+createCannon("top",350,1000);
