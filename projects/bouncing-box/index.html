@@ -63,6 +63,7 @@
 			
 			// TODO 2 - Variable declarations 
 			var positionX; 
+			positionX = 0;
 
 			
 			/* 
@@ -71,11 +72,9 @@
 			turn it around! 
 			*/
 			function update() {
-			positionX = positionX + 10;
- 			moveBoxTo(positionX);
-				
-
-			};
+				positionX = (positionX + 10); 		
+				moveBoxTo(positionX);
+				}
 
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
