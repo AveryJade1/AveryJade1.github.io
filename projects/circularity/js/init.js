@@ -22,7 +22,7 @@ var init = function (window) {
     // TODO 2 : Create a function that draws a circle
     function drawCircle() {
       circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
-      physikz.addRandomVelocity(circle, canvas);
+      physikz.addRandomVelocity(circle, canvas, 10, 10);
       view.addChild(circle);
       circles.push(circle);
     }
@@ -44,11 +44,16 @@ var init = function (window) {
         and check to see if it has drifted off the screen.         
         */
     function update() {
+      physikz.updatePosition(drawCircle);
+      physikz.updatePosition(drawCircle);
+      physikz.updatePosition(drawCircle);
+      physikz.updatePosition(drawCircle);
+      physikz.updatePosition(drawCircle);
       // TODO 4 : Update the circle's position //
       // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
       // TODO 9 : Iterate over the array
     }
-
+    
     /* 
         This Function should check the position of a circle that is passed to the 
         Function. If that circle drifts off the screen, this Function should move
