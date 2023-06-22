@@ -44,11 +44,11 @@ var init = function (window) {
         and check to see if it has drifted off the screen.         
         */
     function update() {
-      physikz.updatePosition(drawCircle);
-      physikz.updatePosition(drawCircle);
-      physikz.updatePosition(drawCircle);
-      physikz.updatePosition(drawCircle);
-      physikz.updatePosition(drawCircle);
+      physikz.updatePosition(canvas, true, true, "#999", 2);
+      physikz.updatePosition(canvas, true, true, "#999", 2);
+      physikz.updatePosition(canvas, true, true, "#999", 2);
+      physikz.updatePosition(canvas, true, true, "#999", 2);
+      physikz.updatePosition(canvas, true, true, "#999", 2);
       // TODO 4 : Update the circle's position //
       // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
       // TODO 9 : Iterate over the array
